@@ -5,22 +5,29 @@
 
 public class AllUnique
 {
-   public Boolean unique(String s)
+   public static Boolean unique(String s)
    {
-      for(int i=0; i<s.length(); i++) // Go through each letter
-      {
-        for(int j=0; j<s.length(); j++) // Compare [i] with every other letter in the string
+        for(int i=0; i<s.length(); i++) // Go through each letter
         {
-          if(s.charAt(i) == s.charAt(j)) // Check if they're equal
-          {
-            if(i !== j)                 // Handles case when same spot is being checked
+            for(int j=0; j<s.length(); j++) // Compare [i] with every other letter in the string
             {
-              return false;
-          }
+                if(s.charAt(i) == s.charAt(j)) // Check if they're equal
+                {
+                    if(i != j)                 // Handles case when same spot is being checked
+                    {
+                        return false;
+                    }
+                }
+            }
         }
-      }
       return true;                    // Once every letter is checked, return true;
-    }  
+    }
+    
+    public static void main(String[] args)   // Driver Program
+    {
+        String s = "unique";
+        System.out.println(unique(s));
+    }
 }
 
 
