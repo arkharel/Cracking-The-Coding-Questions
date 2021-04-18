@@ -1,0 +1,24 @@
+/* Write a method to replace all spaces in a string with '%20'.
+ You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the "true" length of the string.
+ Note: If implementing in Java, please use Character array so that you can perform this operation in place
+ Example:
+ Input: "Mr John Smith      ", 13
+ Output: "Mr$20John$20Smith"
+/*
+
+public class URLify
+{
+    public static String urlify(String s)
+    {
+      /* Convert String into Char Array
+      Check for Spaces
+      If space is found, check next two char's. If next 2 char has letters, run a charPushBack function
+      charPushBack function: 
+      char[] temp = copy of char[]
+      when copy = i, add %20
+      continue with copy, increasing i
+      */
+      
+      
+      
+      
