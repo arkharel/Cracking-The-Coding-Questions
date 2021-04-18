@@ -1,0 +1,26 @@
+// Implement an Algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+
+// Slow Version, O(n^2) Time Complexity
+
+
+public class AllUnique
+{
+   public Boolean unique(String s)
+   {
+      for(int i=0; i<s.length(); i++) // Go through each letter
+      {
+        for(int j=0; j<s.length(); j++) // Compare [i] with every other letter in the string
+        {
+          if(s.charAt(i) == s.charAt(j)) // Check if they're equal
+          {
+            if(i !== j)                 // Handles case when same spot is being checked
+            {
+              return false;
+          }
+        }
+      }
+      return true;                    // Once every letter is checked, return true;
+    }  
+}
+
+
