@@ -1,0 +1,27 @@
+// Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
+import java.util.*;
+import java.io.*;
+
+public class CheckPermutation
+{
+    public static Boolean permutation(String a, String b)
+    {
+        //abbc
+        //abbcbccsabbfsabbsdcbbacscsbcbaabcbba
+        // Check every letter. If letter is in String A, then check next 4 letters.
+        // HashSet storing all possible combinations of String A (HashMap? Map?)
+        // Compare next 4 letters with Hashtable as reference
+        
+        HashSet<String> smallPerm = new HashSet<String>();
+    /* need to learn how to use Maps/HashMap
+       Need to learn how char counting in Arrays work
+       Learn:
+                if(map.containsKey(ch)) 
+                {
+                map.put(ch, map.get(ch) - 1); // Learn what this means
+                if(map.get(ch) == 0) // Learn how map counting works with permutations
+                {
+                    count--;
+                }
+                
+    */
